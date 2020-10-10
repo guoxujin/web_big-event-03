@@ -15,7 +15,7 @@ $(function () {
 
     })
 
-})
+});
 
 // 渲染用户信息
 function getUserInfo() {

@@ -12,15 +12,15 @@ $.ajaxPrefilter(function (options) {
         }
     }
 
-    options.complete = function (res) {
-        if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
+    // options.complete = function (res) {
+    //     if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
 
-            localStorage.removeItem('token')
+    //         localStorage.removeItem('token')
 
-            location.href = '/login.html'
+    //         location.href = '/login.html'
 
-        }
-    }
+    //     }
+    // }
 
     
 })
